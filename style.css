@@ -67,7 +67,7 @@ input[type="range"] {
 }
 
 #chart .top-right-legend {
-
+  transform: translate(-45px, 25px);
 }
 
 #tokenSellSlider {
