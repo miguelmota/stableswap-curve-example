@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>StableSwap Curve Example</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <h1 style="display: none">StableSwap Curve Example</h1>
+    <div class="container">
+      <div id="chart"></div>
+    </div>
+    <div id="sliders">
+      <div class="slider aSlider">
+        <label><div><abbr title="Amplification"><em>A</em></abbr> coefficient: <span id="ACoeffValue" class="tokenValue"></span></div></label>
+        <div class="sliderContainer">0 <input id="ACoeffSlider" type="range" step="1" min="-10" max="50" value="30"> 1,000,000</div>
+      </div>
+      <div id="tokenSliders">
+        <div class="slider">
+          <label><div>Token <span class="name">A</span> supply: <span class="tokenValue"></span></div></label>
+          <div class="sliderContainer">0 <input class="tokenSlider" type="range" step="1" min="-10" max="50" value="30"> 1,000,000</div>
+        </div>
+        <div class="slider">
+          <label><div>Token <span class="name">B</span> supply: <span class="tokenValue"></span></div></label>
+          <div class="sliderContainer">0 <input class="tokenSlider" type="range" step="1" min="-10" max="50" value="30"> 1,000,000</div>
+        </div>
+      </div>
+      <div>
+        <button id="addToken">Add Token</button>
+      </div>
+    </div>
+    <div class="estimate">
+      Swapping <input id="tokenSellSlider" type="text" value="1000"> <select id="tokenIn"></select> for <select id="tokenOut"></select> will give you <span id="amountOut"></span>, at a price of <span id="price"></span>.
+    </div>
+  </main>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://unpkg.com/function-plot/dist/function-plot.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

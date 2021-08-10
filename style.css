@@ -1,0 +1,83 @@
+body {
+  padding: 1rem;
+}
+
+main {
+  display: block;
+  max-width: 1200px;
+}
+
+label {
+  display: block;
+}
+
+.container {
+  width: 100%;
+}
+
+input[type="range"] {
+  width: 80%;
+}
+
+#values {
+  margin-bottom: 1rem;
+}
+
+#values label {
+  display: inline-block;
+}
+
+#tokenValues {
+
+}
+
+.tokenValue {
+  margin-left: 0.5rem;
+}
+
+#sliders {
+  margin-bottom: 1rem;
+}
+
+#tokenSliders {
+  margin-bottom: 1rem;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+}
+
+.slider label {
+  display: inline-flex;
+  margin-right: 1rem;
+  width: 320px;
+}
+
+.sliderContainer {
+  display: inline-flex;
+  width: 100%;
+  align-items: center;
+}
+
+#chart .derivative .line {
+  stroke: red;
+  stroke-width: 1px;
+  opacity: 1;
+}
+
+#chart .top-right-legend {
+
+}
+
+#tokenSellSlider {
+  width: 80px;
+}
+
+.aSlider {
+  margin-bottom: 1rem;
+}
+
+.estimate {
+  margin-top: 2rem;
+}
