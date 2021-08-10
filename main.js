@@ -268,7 +268,7 @@ async function render (renderPrice) {
 
   window.chart = functionPlot({
     target: '#chart',
-    title: 'StableSwap Curve Example',
+    title: 'StableSwap Graph',
     width,
     height,
     yAxis: {
